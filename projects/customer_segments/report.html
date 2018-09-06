@@ -12137,7 +12137,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f62ab4d9128&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f499d2d7278&gt;</pre>
 </div>
 
 </div>
@@ -13808,7 +13808,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f62a64035f8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f4996467e10&gt;</pre>
 </div>
 
 </div>
@@ -14233,7 +14233,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f62a4282dd8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f499607cfd0&gt;</pre>
 </div>
 
 </div>
@@ -14406,8 +14406,23 @@ Seems to belong to segment 1 which is retail category as all categories are high
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We have established broadly 2 segments:  Restaurants/cafe/hotels/delis and Marts/Retailers. Restaurants category consumes more fresh food and because it is pershiable in nature , this category will react more positively to daily service. Hence changing it to 3 days will be negatively received.</p>
-<p>The retail category may not have as such a problem with 3 day service per weak because they usually serve non-perishable items like detegents_paper, milk, frozen. But some retailers may also serve fresh food in large quantities and they could be an exception to this, so they should be evaluated on case-by-case basis.</p>
+<p>We have established broadly 2 segments:  Restaurants/cafe/hotels/delis and Marts/Retailers.</p>
+<p>Theoritical analysis:</p>
+<ul>
+<li><p>Restaurants category consumes more fresh food and because it is pershiable in nature , this category will react more positively to daily service. Hence changing it to 3 days will be negatively received.</p>
+</li>
+<li><p>The retail category may not have as such a problem with 3 day service per weak because they usually serve non-perishable items like detegents_paper, milk, frozen. But some retailers may also serve fresh food in large quantities.</p>
+</li>
+</ul>
+<p>Execution:</p>
+<ul>
+<li><p>By picking a subset of customers from each cluster, the company can evaluate feedback seperately. It could be established whether changing the delivery service is critical to each segment, and whether customers are happy with the change.</p>
+</li>
+<li><p>If a trend is found in a particular representative set, it allows a business to make educated and targeted decisions that would benefit their customers going forward depending on their cluster</p>
+</li>
+<li><p>Thus, we cannot assume change will affect all customers equally. However, the affect shown by representative group of each cluster can be assumed to affect/mirror in all customers of that cluster</p>
+</li>
+</ul>
 
 </div>
 </div>
